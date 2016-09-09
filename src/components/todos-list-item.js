@@ -13,7 +13,7 @@ export default class TodosListItem extends React.Component{
     if(this.state.isEditing){
       return(
         <td>
-          <button>Save</button>
+          <button onClick={this.onSaveClick.bind(this)}>Save</button>
           <button onClick={this.onCancelClick.bind(this)}>Cancel</button>
         </td>
       )
